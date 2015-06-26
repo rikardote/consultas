@@ -1,0 +1,11 @@
+<tr id="empleado_<%= empleado.id %>">
+  <td><%= empleado.num_empleado %></td>
+  <td><%= empleado.nom_empleado %></td>
+  <td><%= empleado.ip %></td>
+  <td><%= empleado.mac_address %></td>
+  <td><%= empleado.departamento %></td>
+  <td>
+    <%= link_to 'Editar', edit_empleado_path(empleado), remote:true, :class => 'btn btn-sm btn-info' %>
+    <%= link_to 'Delete', empleado, remote: true, :method => :delete, data: {confirm: "Liberar: #{empleado.nom_empleado} #{empleado.ip}"}, :class => 'btn btn-sm btn-danger' %>
+  </td>
+</tr>

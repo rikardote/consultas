@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  num_empleado: 1
+  ip: MyString
+  mac_address: MyString
+  departamento: MyString
+
+two:
+  num_empleado: 1
+  ip: MyString
+  mac_address: MyString
+  departamento: MyString
