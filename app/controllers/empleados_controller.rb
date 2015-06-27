@@ -5,9 +5,9 @@ class EmpleadosController < ApplicationController
   def index
      #@empleados = Empleado.all.order('ip ASC')
     if params[:search]
-      @empleados = Empleado.search(params[:search]).order("created_at DESC")
+      @empleados = Empleado.search(params[:search]).order("ip ASC")
     else
-      @empleados = Empleado.all.order('created_at DESC')
+      @empleados = Empleado.all.order('ip ASC')
     end
   end
 
