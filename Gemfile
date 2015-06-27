@@ -15,7 +15,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'jquery-ui-rails'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'rails4-autocomplete'
-group :development, :test do
+group :development do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'sqlite3'
   gem 'byebug'
@@ -29,7 +29,8 @@ group :development, :test do
   gem 'capistrano-rails', group: :development
 
 end
-group :production do
+group :test, :production do
   gem 'pg', '~> 0.18.2'
+  gem 'sqlite3'
   gem 'rails_12factor', '~> 0.0.3'
 end
