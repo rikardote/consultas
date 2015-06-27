@@ -22,5 +22,5 @@ test:
 
 production:
   <<: *default
-  database: consultas_production
+  database: testapp_production
   #database: db/production.sqlite3

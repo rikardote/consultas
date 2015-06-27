@@ -1,10 +1,9 @@
-root = "/usr/share/nginx/html/consultas/current"
+root = "/opt/www/testapp/current"
 working_directory root
 pid "#{root}/tmp/pids/unicorn.pid"
 stderr_path "#{root}/log/unicorn.log"
 stdout_path "#{root}/log/unicorn.log"
 
-listen "/tmp/unicorn.consultas.sock"
-worker_processes 2
+listen "/tmp/unicorn.testapp.sock"
+worker_processes 1
 timeout 30
-
