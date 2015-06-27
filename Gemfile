@@ -1,14 +1,13 @@
 source 'https://rubygems.org'
-
+ruby '2.2.2'
 gem 'rails', '4.2.1'
 gem 'sqlite3'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails'
-gem 'unicorn', '~> 4.8.0'
-gem 'capistrano', '~> 2.15.4'
-gem 'rvm-capistrano', '~> 1.5.1'
+gem 'unicorn'
+
 gem 'turbolinks'
 gem 'bootstrap-sass', '~> 3.3.5'
 gem 'jbuilder', '~> 2.0'
@@ -24,4 +23,6 @@ group :development, :test do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+
+  gem 'capistrano-rails', group: :development
 end
